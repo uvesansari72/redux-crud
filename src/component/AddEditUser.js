@@ -54,7 +54,7 @@ const AddEditUser = (props) => {
       setValue("user_email", props?.row?.user_email);
       setValue("user_contact", props?.row?.user_phone);
     }
-  });
+  },[]);
 
   return (
     <Index.Modal open={props.open} onClose={props.handleClose}>
